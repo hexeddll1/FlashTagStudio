@@ -1,86 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="flashtag.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flash Tag Studio</title>
-    
+    <title>Flash Tag VR</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-  <a href="/">
-    <img src="logo.png" alt="Company Name Logo" class="logo">
-  </a>
-</header>
-
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
 
     <nav class="navbar">
         <div class="logo">FLASH <span class="highlight">TAG</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#trailer">Trailer</a></li>
             <li><a href="#features">Features</a></li>
-            <li><a href="#community" class="btn-nav">Join Discord</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#community">Community</a></li>
         </ul>
+        <div class="cta-btn-container">
+            <a href="https://www.meta.com/en-gb/experiences/flash-tag/25838480825760140/" class="btn-primary">DOWNLOAD</a>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="glitch" data-text="FLASH TAG VR">FLASH TAG VR</h1>
-            <p>Flash Tag VR is a best fan-game for you to hop on your VR and play!</p>
-            <div class="cta-group">
-                <a href="#trailer" class="btn btn-primary">Watch Trailer</a>
-                <a href="#" class="btn btn-secondary">Download Now</a>
-            </div>
-        </div>
+    <section id="home" class="hero">
         <div class="hero-overlay"></div>
-    </header>
-
-    <section id="trailer" class="section-dark">
-        <h2 class="section-title">Gameplay <span class="highlight">Trailer</span></h2>
-        <div class="video-container">
-            <iframe 
-                src="" 
-                title="Flash Tag Trailer" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
+        <video autoplay muted loop id="bg-video">
+            <source src="Gorilla Tag Gameplay Trailer.mp4" type="video/mp4">
+        </video>
+        
+        <div class="hero-content">
+            <h1 class="glitch" data-text="FLASH TAG">FLASH TAG</h1>
+            <p class="subtitle">Best Gorilla Tag fan-game</p>
+            <div class="hero-buttons">
+                <a href="https://www.meta.com/en-gb/experiences/flash-tag/25838480825760140/" class="btn-primary"></i> Download in Applab</a>
+                <a href="https://discord.gg/99byhWuT7V" class="btn-secondary"><i class="fab fa-discord"></i> Join Discord</a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll to Start</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <section id="features" class="section-light">
+    <section id="features" class="features">
         <h2 class="section-title">Game <span class="highlight">Features</span></h2>
-        <div class="features-grid">
+        
+        <div class="feature-grid">
             <div class="feature-card">
-                <h3>⚡ Best Locomotion</h3>
-                <p>Experience total freedom with our physics-based locomotion system.</p>
+                <i class="fas fa-bolt"></i>
+                <h3>Best locomotion</h3>
+                <p>Master the art of locomotion. Wall-run, slide, and boost through neon-drenched arenas.</p>
             </div>
             <div class="feature-card">
-                <h3>🎮 Across-Platform</h3>
-                <p>Play with friends on Quest, and do not forget to talk about our Game.</p>
+                <i class="fas fa-users"></i>
+                <h3>Multiplayer</h3>
+                <p>Team up or go solo in massive infected modes. Don't get caught.</p>
             </div>
             <div class="feature-card">
-                <h3>🕶️ Cool Cosmetics</h3>
-                <p>Hop out the tree and head towards city and get cosmetics that you desire.</p>
+                <i class="fas fa-vr-cardboard"></i>
+                <h3>Physics</h3>
+                <p>Full-body inverse kinematics. Your avatar moves exactly how you move.</p>
             </div>
             <div class="feature-card">
-                <h3>🌐 Active Community</h3>
-                <p>Join our Discord to connect with other players and stay updated.</p>
+                <i class="fas fa-microchip"></i>
+                <h3>Cosmetics</h3>
+                <p>Unlock skins, trails, and visors. Look good while running for your life.</p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Flash Tag VR. All rights reserved.</p>
+    <section id="media" class="media">
+        <h2 class="section-title">FLASH TAG <span class="highlight">MAPS</span></h2>
+        <div class="gallery">
+            <div class="gallery-item" style="background-image: url('https://media.discordapp.net/attachments/1236618966663958538/1453706616594632786/Capture_decran_2025-12-25_120832.png?ex=694e6d49&is=694d1bc9&hm=02323d519c96da6e4fe1a33dd400fcd31d3d480d6d5f5ab93550d4b28224a212&=&format=webp&quality=lossless&width=1167&height=583');">
+                <div class="gallery-overlay">
+                    <h4>Forest</h4>
+                </div>
+            </div>
+            <div class="gallery-item" style="background-image: url('https://media.discordapp.net/attachments/1236618966663958538/1453706617043292274/Capture_decran_2025-12-25_121002.png?ex=694e6d4a&is=694d1bca&hm=b8f8e49ebe3f5260b1620ebb524667ebac4e32be165bd895a779cd7da77b8c2a&=&format=webp&quality=lossless&width=1168&height=586');">
+                <div class="gallery-overlay">
+                    <h4>City</h4>
+                </div>
+            </div>
+            <div class="gallery-item" style="background-image: url('https://media.discordapp.net/attachments/1236618966663958538/1453706617496404100/Capture_decran_2025-12-25_121035.png?ex=694e6d4a&is=694d1bca&hm=b5afdada74357231d3335fe32a73a38f400c185d1d229e081409c283f23ff5f6&=&format=webp&quality=lossless&width=1175&height=589');">
+                <div class="gallery-overlay">
+                    <h4>Caves</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="community">
+        <div class="footer-content">
+            <h2>Stay in the <span class="highlight">Loop</span></h2>
+            <p>Subscribe for beta access keys and exclusive drops.</p>
+            
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+
+            <div class="socials">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <p class="copyright">&copy; 2024 Flash Tag VR. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
